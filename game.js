@@ -56,10 +56,10 @@ var COLUMNS = map[0].length;
 
 //music
 var mySound;
-mySound = new Audio(["../images/Rhythm.mp3"]); //ES6 const
+mySound = new Audio(["./images/Rhythm.mp3"]); //ES6 const
 
 var mySoundEnd;
-mySoundEnd = new Audio(["../images/SynthChime3.mp3" ]); //ES6 const
+mySoundEnd = new Audio(["./images/SynthChime3.mp3" ]); //ES6 const
 
 //Find the PERSON's and DRAGON's start positions
 var PERSONRow;
@@ -356,7 +356,7 @@ function endGame()
     gameMessage
       = "You made it home ALIVE! " + "Final Score: " + score;
   }
-  if ( map[PERSONRow][PERSONColumn] === mapCode.FIRE)
+  else if ( map[PERSONRow][PERSONColumn] === mapCode.FIRE)
   {
       let score = food + gold + experience;   //ES6
       gameMessage
@@ -437,19 +437,19 @@ function render()
           break;
 
         case mapCode.PALM:
-          cell.src = "../images/palm-tree-icon.png";
+          cell.src = "./images/palm-tree-icon.png";
           break;
 
         case mapCode.FIGHTER:
-          cell.src = "../images/fightingIcon.png";
+          cell.src = "./images/fightingIcon.png";
           break;
 
           case mapCode.FIRE:
-            cell.src = "../images/fire-icon.png";
+            cell.src = "./images/fire-icon.png";
             break;
 
         case mapCode.HOME:
-          cell.src = "../images/home-icon.png";
+          cell.src = "./images/home-icon.png";
           break;
       }
 
@@ -457,11 +457,11 @@ function render()
 	    switch(gameObjects[row][column])
 	    {
 	      case mapCode.PERSON:
-	        cell.src = "../images/mainIcon.png";
+	        cell.src = "./images/mainIcon.png";
 	        break;
 
 	      case mapCode.DRAGON:
-	        cell.src = "../images/dragon-icon.png";
+	        cell.src = "./images/dragon-icon.png";
 	        break;
 	    }
 
