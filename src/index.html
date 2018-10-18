@@ -1,0 +1,49 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Treasure Hunt</title>
+
+ <link rel="stylesheet" type="text/css" href="game.css">
+ <!-- <link rel="stylesheet" type="text/css" href="reset.css"> -->
+<body>
+    <div id = "back">
+    <div id="mainScreen">
+<h1>TREASURE HUNT</h1>
+<p id = "mainP">
+    <b>Please read the instructions.</b>
+    <br />
+    * Your goal in this game is to reach the Treasure Home without getting caught by the DRAGON.
+    <br />
+    * On your way, you might have to deal with the fire or a fighting person. Be careful ! you will die if you touch them.
+    <br />
+    * You will have 10 gold coins and 10 Food points when you start the game.
+    <br />
+    * Each step you take will take away 2 points from your food, in other words, you can move forward only if you eat 2 coconuts.
+    <br />
+    * If you are out of food or coins, you die.
+    <br />
+    * You can use the coins to buy some coconuts/food from the coconut tree if you are getting out of food.
+    <br />
+    * Use the arrow keys from your device to play the game.
+    <br />
+    * Please click start button to start the game.
+</p>
+<input id="StartButton" type="button" value="Start"/>
+</div>
+</div>
+
+<section id="game" style="display:none" >
+  <div id ="stage" ></div>
+  <div id = "ending">
+      <h2> Game is Over</h2> <input id="ReloadButton" type="button" value="New Game"/>
+
+  </div>
+
+
+  <p id="output"></p>
+
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src = "game.js"></script>
+</body>
+</html>
